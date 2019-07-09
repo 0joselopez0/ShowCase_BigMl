@@ -1,0 +1,125 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/jquery-ui.theme.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js" integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk=" crossorigin="anonymous"></script>
+    <script src="js/prednfc.js"></script>
+    <script src="js/predboro.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/init.css">
+    <script src="js/llamadamodelos.js"></script>
+    <script src="js/navegacion.js"></script>
+  <script>
+  actualizarvalor2()  </script>
+   
+</head>
+
+<body>
+    
+    <div class="pos-f-t fixed-top">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="upnavbar p-4">
+                <div class="col">
+                    <div class="row">
+                        <div class="col primerhijo p-2">
+                            <div class="row p-0">
+                                <div class="col pr-2">
+                                    <button onclick="carganfc()" data-toggle="collapse"
+                                        data-target="#navbarToggleExternalContent"
+                                        class="btn btn-light botonproyecto">Caudal de Burgos</button>
+                                        
+                                </div>
+                                
+
+                            </div>
+                            <div class="row p-0">
+                                <div class="col pr-2">
+                                    
+                                        <button onclick="cargaboro()" data-toggle="collapse"
+                                        data-target="#navbarToggleExternalContent" class="btn btn-light botonproyecto">
+                                        Boro</button>
+                                </div>
+                                
+
+                            </div>
+                            <div class="row p-0">
+                                <div class="col pr-2">
+                                   
+                                    <button onclick="recargaindex()" data-toggle="collapse"
+                                        data-target="#navbarToggleExternalContent" class="btn btn-light botonproyecto">
+                                        <img src="img/home.png"></button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar  navbar-light bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <img class="logoacciona" src='img/1200px-Acciona.png'>
+                <p>© DaBigT (Data Science and BigData Team)</p>
+            </button>
+            <img class="betalogo" src="img/betalogo.png">
+        </nav>
+    </div>
+    <div class="container-fluid">
+        <div class="col">
+            <div class="row">
+                <div id="principal" class="col primerhijo p-3">
+                    <div class="row">
+                        <div class="col text-center contenedorlogobigml">
+                            <--<img src="img/data.png">
+                                <img src="img/report.png">-->
+                        </div>
+                        <div class="col text-justify p-3">
+                            <h1 class="fuenteh">La plataforma DaBigT</h1>
+                            <p class="fuentep"> LA iniciativa DaBigT contempla la posibilidad de creación de un grupo de
+                                trabajadores de Acciona Agua dedicados al Big Data & DataScience. Este portal, aún en
+                                fase beta, sería un portfolio para la muestra de los distintos estudios, modelos y
+                                predicciones elaboradas.<br><br>
+                                Con una web sencilla e intuitiva, accesible desde cualquier lugar, dentro o fuera de la
+                                empresa (por definir). Ofreciendo desde información relevante en cuanto al mundo del
+                                BigData
+                                Tanto como los resultados obtenidos a partir de distintos sets de datos.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col p-3 text-center">
+                    <h2 class="fuenteh">Estudios realizados:</h2>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col primerhijo p-2">
+                    <div class="row p-0">
+                        <div class="col pr-2">
+                            <button onclick="carganfc()" class="btn btn-light botonproyecto"><img
+                                    src="img/mas.png">Caudal de Burgos</button>
+                        </div>
+                        <div class="col">
+                            <button onclick="cargaboro()" class="btn btn-light botonproyecto"><img src="img/mas.png">
+                                Boro</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,198 @@
+<div class="row p-0">
+    <div class="col p-3 pt-0 text-center">
+        <h2 class="fuenteh">Estudio Del Boro</h2>
+        <div class="text-justify p-3 pr-5 pl-5">
+            <p class="fuentep">
+                New Fuel Car es un set de datos que contiene variables recogidas de una serie de pruebas realizadas a
+                determinados vehículos con el fin de evaluar
+                el rendimiento de un nuevo carburante. Dichas pruebas pretenden dar cierta solución al problema
+                energético actual. La aparición de dicho proyecto en este apartado
+                viene ligado a la mejora del workflow en la etapa de desarrollo.
+                <br><br>
+                Se establece pues, el análisis y la elavoración de modelos haciendo foco en el Tiempo Máximo (que es el
+                tiempo que el coche está en funcionamiento con el nuevo combustible).
+                A continuación se muestran los datos de entrada y salida obtenidos.
+
+            </p>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col text-center">
+        <dic class="row">
+
+            <div class="col p-4">
+
+            </div>
+
+        </dic>
+        <div class="row">
+            <div class="col p-4">
+                <h3 class="fuenteh">Gráfica Real-Predicción</h3>
+                <img class="chartnfc" src="img/chartboro.png">
+            </div>
+        </div>
+
+    </div>
+    <div class="col text-center">
+
+        <br><br>
+        <div class="row p-4">
+            <div class="col">
+                <h3 class="fuenteh">Dataset:</h3>
+            </div>
+        </div>
+        <div class="row p-4 text-center">
+            <div class="col">
+                <label class="fuentep2">Nombre:</label><label class="fuentep">Boro_All_Zones</label><br>
+                <label class="fuentep2">Formato:</label><label class="fuentep">CSV</label><br>
+
+            </div>
+            <div class="col">
+                <label class="fuentep2">Peso:</label><label class="fuentep">163.7 KB</label><br>
+                <label class="fuentep2">Variable objetivo:</label><label class="fuentep">Boro</label><br>
+            </div>
+        </div>
+        <div class="row p-4">
+            <div class="col">
+                <h3 class="fuenteh">Salidas generadas:</h3>
+            </div>
+        </div>
+        <div class="row p-4 text-center">
+            <div class="col">
+                <label class="fuentep2">1 Modelo </label><label class="fuentep">: Max R: 0.98</label><br>
+                <label class="fuentep2">46 Essembles</label><label class="fuentep">: Max R: 0.98</label><br>
+                <label class="fuentep2">2 Deep Nets</label><label class="fuentep">: Max R: 0.98</label><br>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="row text-center">
+    <div class="col p-0">
+        <br><br>
+        <h3 class="fuenteh">Variables más influyentes</h3>
+        <br><br>
+        <br>
+        <div class="row">
+            <div class="col p-0">
+                <img class="chartboro2" src="img/varinboro.png">
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</div>
+<div class="row text-center">
+    <div class="col p-0">
+        <h3 class="fuenteh">Predicción</h3>
+        <p class="fuentep">En esta sección se pueden probar las predicciones realizadas por uno de los modelos
+            desarrollados. Para este caso, el modelo en cuestión tiene un
+            R= 0.98<br>
+            No es el modelo con más precisión pero si el disponible actualmente para la realización de estas
+            predicciones en "tiempo real"
+            . </p>
+        <br>
+        <div class="row">
+            <div class="col p-0">
+                <h4 class="fuenteh"> Ejemplo predictivo </h4>
+                <br>
+                <div class="row text-left p-3 ">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                <label class="fuentep2">Fecha: <input type="date" id="datepickerboro"></label>
+                            </div>
+                            <div class="col">
+                                <label class="fuentep2">Hora de la muestra: <input type="time" id="timepickerboro"></label>
+                            </div>
+
+
+
+
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label class="fuentep2">Ph:</label><br>
+                                <div id="slider">
+                                    <div id="custom-handle" class="ui-slider-handle"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col">
+                                <label class="fuentep2">Turbidez:</label><br>
+                                <div id="slider2">
+                                    <div id="custom-handle2" class="ui-slider-handle"></div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <label class="fuentep2">Temp:</label><br>
+                                <div id="slider3">
+                                    <div id="custom-handle3" class="ui-slider-handle"></div>
+                                </div>
+                            </div>
+
+
+
+
+                        </div> <br>
+                        <div class="row">
+                            <div class="col">
+
+                                <label class="fuentep2">Dureza:</label><br>
+                                <div id="slider4">
+                                    <div id="custom-handle4" class="ui-slider-handle"></div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <label class="fuentep2">Conductividad:</label><br>
+                                <div id="slider5">
+                                    <div id="custom-handle5" class="ui-slider-handle"></div>
+                                </div>
+                            </div>
+                        </div> <br>
+                        <div class="row">
+                            <div class="col">
+                                <label class="fuentep2">Cloruros:</label><br>
+                                <div id="slider6">
+                                    <div id="custom-handle6" class="ui-slider-handle"></div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <label class="fuentep2">Aluminio:</label><br>
+                                <div id="slider7">
+                                    <div id="custom-handle7" class="ui-slider-handle"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <br><br>
+
+
+
+
+
+                    </div>
+
+
+
+                </div>
+                <button id="predecir" onclick="actualizarvalor2()" class="btn btn-dark">Predecir</button><br><br>
+                <h4 class="fuenteh"> Predicción: </h4>
+                <h1 id="predicho2">0.00</h1>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+<script src="js/navegacion.js">
+
+</script>

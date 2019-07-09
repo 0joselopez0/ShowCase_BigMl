@@ -1,0 +1,183 @@
+<div class="row p-0">
+    <div class="col p-3 pt-0 text-center">
+        <h2 class="fuenteh">Caudal de Burgos</h2><br><br>
+        <div class="row row-eq-height">
+            <div class="col">
+                <div class="text-justify p-3 pr-5 pl-5">
+                    <p class="fuentep">
+                        Se dispone de un histórico con las mediciones disponibles en la zona de Burgos con una longitud temporal
+                        de 5 años. El objetivo del estudio es poder realizar la predicción en una determinada
+                        zona de la superficie establecida en función del resto de variables.
+                        <br><br>
+                        Se establece pues, el análisis y la elavoración de modelos haciendo foco en el Caudal máximo en
+                        Villalonquéjar.
+                        A continuación se muestran los datos de entrada y salida obtenidos.
+
+                    </p>
+                </div>
+            </div>
+            <div class="col text-center">
+
+
+                <div class="row p-4">
+                    <div class="col">
+                        <h3 class="fuenteh">Dataset:</h3>
+                    </div>
+                </div>
+                <div class="row p-4 text-center">
+                    <div class="col">
+                        <label class="fuentep2">Nombre:</label><label class="fuentep">Burgos_Data_QD</label><br>
+                        <label class="fuentep2">Formato:</label><label class="fuentep">CSV</label><br>
+
+                    </div>
+                    <div class="col">
+                        <label class="fuentep2">Peso:</label><label class="fuentep">3.98 MB</label><br>
+                        <label class="fuentep2">Variable objetivo:</label><label class="fuentep">QD Max (s) [Caudal
+                            Máximo]</label><br>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col p-4">
+        <div class="row p-4 text-center row-eq-height">
+            <div class="col">
+
+                <h3 class="fuenteh">Algoritmos generados:</h3>
+                <p class="fuentep text-justify">
+                    A partir del estudio y entrenamiento de los datos se han extraido una serie de modelos matemáticos y algoritmos para la predicción del caudal máximo.<br><br>
+                    Los aquí representados son una selección determinada por su coeficiente de acierto y pequeño margen de error.
+                </p>
+
+                <div class="row">
+                    <div class="col">
+                        <div id="acordeon_burgos">
+                            <h5 class="headacordeon pt-2"><img src="img/mas.png">Modelos:</h5>
+                            <div>
+                                Modelos realizados
+                            </div>
+                            <h5 class="headacordeon pt-2"> <img src="img/mas.png">Essembles</h5>
+                            <div>
+                                Modelos realizados
+                            </div>
+                            <h5 class="headacordeon pt-2"> <img src="img/mas.png">DeepNets</h5>
+                            <div>
+                                Modelos realizados
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h3 class="fuenteh">Salidas generadas:</h3>
+                <p class="fuentep text-justify">
+                    En esta sección se pueden observar distintos datos derivados del estudio tales como:
+
+                </p>
+                <div id="acordeon_burgos2">
+                    <h5 class="headacordeon pt-2">
+
+                        <img src="img/mas.png">Variables más influyentes:</h5>
+                    <div class="insideacordeon">
+                        <p class="fuentep">En la siguiente gráfica podemos observar aquellos parámetros más influyentes en nuestra variable objetivo.</p>
+                        <img class="chartnfc2" src="img/varinfnfc.png">
+                        <p class="fuentep"> Podemos obsevar que lo más influyente en el caudal es la fecha, seguido por la presión mínima, la temperatura y presión máxima</p>
+                    </div>
+                    <h5 class="headacordeon pt-2"> <img src="img/mas.png">Prediccion</h5>
+                    <div class="insideacordeon">
+                        <p class="fuentep">El siguiente dibujo representa la dispersión de la predicción realizada con respecto al dato real.</p>
+                        <img class="chartnfc2" src="img/chartnewfuel.png">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+</div>
+
+<div class="row text-center">
+    <div class="col p-0">
+        <h3 class="fuenteh">Predicción</h3>
+        <p class="fuentep">En esta sección se pueden probar las predicciones realizadas por uno de los modelos
+            desarrollados. Para este caso, el modelo en cuestión tiene un
+            R= 0.92<br>
+            No es el modelo con más precisión pero si el disponible actualmente para la realización de estas
+            predicciones en "tiempo real"
+            . </p>
+        <br>
+        <div class="row">
+            <div class="col p-0">
+                <h4 class="fuenteh"> Input </h4>
+                <br>
+                <div onchange="actualizarvalor()" class="row text-left p-3 ">
+                    <div class="col">
+                        <label class="fuentep2">Día del Mes:</label><br><input id="diadelmes" style="width:6vh" type="text"><br>
+                        <label class="fuentep2">Mes:</label><br><input id="mes" style="width:6vh" type="text"><br>
+                        <label class="fuentep2">Año:</label><br><input id="ano" style="width:6vh" type="text"><br>
+                        <label class="fuentep2">Hora:</label><br><input id="hora" style="width:6vh" type="text"><br>
+                        <label class="fuentep2">Día de la semana:</label><br><input id="diadelasemana" style="width:6vh" type="text"><br>
+                        <label class="fuentep2">semana:</label><br><input id="semana" style="width:6vh" type="text"><br>
+                        <label class="fuentep2">M:</label><br><input id="m" style="width:6vh" type="text"><br>
+                        <label class="fuentep2">Intervalo Caudal:</label><br><input id="intervalot" style="width:6vh" type="text"><br>
+                        <label class="fuentep2">Humedad:</label><br><input id="temperaturasuelo" style="width:6vh" type="text"><br>
+                    </div>
+                    <div class="col">
+
+                    </div>
+                    <div class="col text-left">
+                        <label class="fuentep2">Presión máxima:</label><br><input id="velmax" style="width:6vh" type="text"><br>
+                        <label class="fuentep2">Presión mínima:</label><br><input id="velmin" style="width:6vh" type="text"><br>
+                        <label class="fuentep2">Intervalo de presion</label><br><input id="intervalovel" style="width:6vh" type="text"><br>
+                        <label class="fuentep2">Presión media:</label><br><input id="velmed" style="width:6vh" type="text"><br>
+                        <label class="fuentep2">Velocidad del viento(km/h):</label><br><input id="carburante" style="width:6vh" type="text"><br>
+                        <label class="fuentep2">Temperatura exterior(ºC):</label><br><input id="presionneu" style="width:6vh" type="text"><br>
+                        <label class="fuentep2">Presión exterior(bar):</label><br><input id="peso" style="width:6vh" type="text"><br>
+                        <label class="fuentep2">Precipitaciones(mm):</label><br><input id="retrasoarranque" style="width:6vh" type="text"><br>
+
+
+                    </div>
+                    <div class="col">
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col p-0">
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <h4 class="fuenteh"> Predicción: </h4>
+                <h1 id="predicho">0.00</h1><label>Segundos</label>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+<script>
+    $("#acordeon_burgos").accordion({
+        collapsible: true,
+        active: false
+    });
+    $("#acordeon_burgos2").accordion({
+        collapsible: true,
+        heightStyle: "content"
+    });
+
+</script>
